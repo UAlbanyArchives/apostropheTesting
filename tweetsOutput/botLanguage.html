@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="js/d3.js"></script>
+<script src="js/d3plus.js"></script>
+
+<div id="viz"></div>
+
+<script>
+
+  var data = [{"value": 23668, "Language": "English", "name": "English"}, {"value": 1265, "Language": "French", "name": "French"}, {" value": 570, "Language": "German", "name": "German"}, {"value": 395, "Language": "und", "name": "und"}, {"value": 154, " Language": "tl", "name": "tl"}, {"value": 124, "Language": "in", "name": "in"}, {"value": 101, "Language": "Korean", "na me": "Korean"}, {"value": 71, "Language": "Turkish", "name": "Turkish"}, {"value": 56, "Language": "Hindi", "name": "Hin di"}, {"value": 49, "Language": "et", "name": "et"}, {"value": 43, "Language": "ro", "name": "ro"}, {"value": 42, "Langu age": "Danish", "name": "Danish"}, {"value": 30, "Language": "Spanish", "name": "Spanish"}, {"value": 29, "Language": "h t", "name": "ht"}, {"value": 18, "Language": "Polish", "name": "Polish"}, {"value": 11, "Language": "Italian", "name": " Italian"}, {"value": 10, "Language": "Japanese", "name": "Japanese"}, {"value": 10, "Language": "Dutch", "name": "Dutch" }, {"value": 9, "Language": "Russian", "name": "Russian"}, {"value": 9, "Language": "Portuguese", "name": "Portuguese"},  {"value": 7, "Language": "Swedish", "name": "Swedish"}, {"value": 6, "Language": "Finnish", "name": "Finnish"}, {"value ": 5, "Language": "Norwegian", "name": "Norwegian"}, {"value": 5, "Language": "cs", "name": "cs"}, {"value": 4, "Languag e": "lv", "name": "lv"}, {"value": 4, "Language": "lt", "name": "lt"}, {"value": 3, "Language": "cy", "name": "cy"}, {"v alue": 2, "Language": "sl", "name": "sl"}, {"value": 2, "Language": "vi", "name": "vi"}, {"value": 2, "Language": "eu", "name": "eu"}]
+  
+
+  var visualization = d3plus.viz()
+    .container("#viz")
+    .data(data)
+    .type("bar")
+    .id("name")
+    .x("Language")
+    .y("value")
+    .draw()
+
+</script>
